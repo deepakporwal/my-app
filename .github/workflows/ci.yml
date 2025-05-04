@@ -32,4 +32,4 @@ jobs:
   post-build:
     runs-on: ubuntu-latest
     steps:
-    - run: echo ${{github.ref}}
+    - run: echo ${{ github.actor }} + ' ' +  ${{github.ref}}
