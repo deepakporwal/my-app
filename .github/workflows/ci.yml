@@ -32,4 +32,6 @@ jobs:
   post-build:
     runs-on: ubuntu-latest
     steps:
-    - run: echo ${{ github.actor }} + ' ' +  ${{github.ref}}
+    - run: echo ${{ github.actor }} ${{github.ref}}
+    - run: echo database name is :${{env.DB_NAME}}
+    - run: echo database pwd is :${{secrets.DB_PWD}}
