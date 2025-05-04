@@ -37,3 +37,4 @@ jobs:
     steps:
     - run: echo ${{ github.actor }} ${{github.ref}}
     - run: echo "Today is $DAY_OF_WEEK!"
+    - run: echo  ${{github.actor_id}} - ${{github.actor}}
