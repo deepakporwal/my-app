@@ -36,4 +36,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - run: echo ${{ github.actor }} ${{github.ref}}
-    - run: echo day of the week is $DAY_OF_WEEK
+    - run: echo "Today is $DAY_OF_WEEK!"
